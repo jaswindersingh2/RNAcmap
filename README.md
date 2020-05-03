@@ -61,7 +61,7 @@ To run the RNAcmap
 -----
 To run the RNAcmap, the following command can be used.
 ```
-./sample.sh inputs/sample_seq.fasta RNAfold
+./run_rnacmap.sh inputs/sample_seq.fasta RNAfold
 ```
 The final output will be the "*.dca" file in the "outputs" folder consists of predicted Direct Coupling Analysis (DCA) by RNAcmap for a given input RNA sequence.
 
