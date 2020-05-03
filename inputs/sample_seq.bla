@@ -1,0 +1,1835 @@
+BLASTN 2.10.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: ncbi_db/nt
+           55,908,648 sequences; 260,722,916,040 total letters
+
+
+
+Query= sample_seq
+
+Length=111
+                                                                      Score        E
+Sequences producing significant alignments:                          (Bits)     Value
+
+6OL3_C Chain C, Adenovirus Virus-Associated (VA) RNA I apical and...  198        3e-47
+
+
+>6OL3_C Chain C, Adenovirus Virus-Associated (VA) RNA I apical 
+and central domains
+Length=112
+
+ Score = 198 bits (107),  Expect = 3e-47
+ Identities = 110/111 (99%), Gaps = 1/111 (1%)
+ Strand=Plus/Plus
+
+Query  2    GACCTCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTCC  111
+            |||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2    GACCTCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTCC  112
+
+
+>LC504573.1 Human mastadenovirus C K67-339 DNA, complete genome
+Length=35911
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10643  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10748
+
+
+>MH183293.1 Human adenovirus 1 strain SH2016, complete genome
+Length=35946
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10653  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10758
+
+
+>MN513345.1 Human adenovirus 1 isolate SG09/HAdvC1/2016, complete 
+genome
+Length=35981
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10648  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10753
+
+
+>MN513344.1 Human adenovirus 1 isolate SG08/HAdvC1/2016, complete 
+genome
+Length=35986
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10652  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10757
+
+
+>MN513342.1 Human adenovirus 2 isolate SG06/HAdvC2/2016, complete 
+genome
+Length=35924
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10636  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10741
+
+
+>MN513341.1 Human adenovirus 1 isolate SG05/HAdvC1/2016, complete 
+genome
+Length=35981
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10648  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10753
+
+
+>MK357714.1 Human adenovirus sp. isolate DT-11, complete genome
+Length=35931
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10628  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10733
+
+
+>MK357715.1 Human adenovirus sp. isolate DT-4, complete genome
+Length=35873
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10614  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10719
+
+
+>MK165452.1 Human mastadenovirus C isolate SX-2000-140, complete 
+genome
+Length=35949
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10660  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10765
+
+
+>MH558113.1 Human mastadenovirus C strain human/CHN/GD2467/2017/87'[P1H1F2], 
+complete genome
+Length=35933
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10653  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10758
+
+
+>KX868466.2 Human adenovirus 5 isolate GyK193, complete genome
+Length=35918
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10638  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10743
+
+
+>MH121117.1 Human mastadenovirus C strain 51C1, partial genome
+Length=35831
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10572  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10677
+
+
+>MH121116.1 Human mastadenovirus C strain 50C1, partial genome
+Length=35926
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10655  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10760
+
+
+>MH121114.1 Human mastadenovirus C strain 47C2, partial genome
+Length=35923
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10641  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10746
+
+
+>MH121113.1 Human mastadenovirus C strain 46C6, partial genome
+Length=35752
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10636  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10741
+
+
+>MH121112.1 Human mastadenovirus C strain 45C6, partial genome
+Length=35753
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10638  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10743
+
+
+>MH121111.1 Human mastadenovirus C strain 44C2, partial genome
+Length=35918
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10636  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10741
+
+
+>MH121110.1 Human mastadenovirus C strain 43C1, partial genome
+Length=35913
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10664  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10769
+
+
+>MH121109.1 Human mastadenovirus C strain 42C2, partial genome
+Length=35777
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10571  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10676
+
+
+>MH121108.1 Human mastadenovirus C strain 41C1, partial genome
+Length=36077
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10737  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10842
+
+
+>MH121106.1 Human mastadenovirus C strain 38C2, partial genome
+Length=35858
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10578  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10683
+
+
+>MH121105.1 Human mastadenovirus C strain 37C2, partial genome
+Length=35859
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10578  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10683
+
+
+>MH121104.1 Human mastadenovirus C strain 36C2, partial genome
+Length=35764
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10574  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10679
+
+
+>MH121103.1 Human mastadenovirus C strain 35C2, partial genome
+Length=35949
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10661  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10766
+
+
+>MH121102.1 Human mastadenovirus C strain 34C2, partial genome
+Length=35788
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10588  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10693
+
+
+>MH121101.1 Human mastadenovirus C strain 33C2, partial genome
+Length=35853
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10656  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10761
+
+
+>MH121100.1 Human mastadenovirus C strain 32C1, partial genome
+Length=35932
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10583  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10688
+
+
+>MH121099.1 Human mastadenovirus C strain 31C2, partial genome
+Length=35799
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10567  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10672
+
+
+>MH121098.1 Human mastadenovirus C strain 30C1, partial genome
+Length=35999
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10657  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10762
+
+
+>MH121097.1 Human mastadenovirus C strain 29C2, partial genome
+Length=35752
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10553  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10658
+
+
+>MH121095.1 Human mastadenovirus C strain 26C2, partial genome
+Length=35779
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10568  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10673
+
+
+>MH121094.1 Human mastadenovirus C strain 25C5, partial genome
+Length=35897
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10630  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10735
+
+
+>MH121093.1 Human mastadenovirus C strain 24C2, partial genome
+Length=35911
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10630  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10735
+
+
+>MH121092.1 Human mastadenovirus C strain 23C2, partial genome
+Length=35929
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10634  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10739
+
+
+>MH121090.1 Human mastadenovirus C strain 21C2, partial genome
+Length=35819
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10591  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10696
+
+
+>MH121089.1 Human mastadenovirus C strain 20C1, partial genome
+Length=35978
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10641  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10746
+
+
+>MH121088.1 Human mastadenovirus C strain 19C2, partial genome
+Length=35962
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10680  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10785
+
+
+>MH121087.1 Human mastadenovirus C strain 18C1, partial genome
+Length=35594
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10476  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10581
+
+
+>MH121086.1 Human mastadenovirus C strain 17C2, partial genome
+Length=35747
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10550  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10655
+
+
+>MH121085.1 Human mastadenovirus C strain 16C2, partial genome
+Length=35702
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10556  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10661
+
+
+>MH121084.1 Human mastadenovirus C strain 15C2, partial genome
+Length=35834
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10600  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10705
+
+
+>MH121083.1 Human mastadenovirus C strain 14C2, partial genome
+Length=35784
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10575  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10680
+
+
+>MH121082.1 Human mastadenovirus C strain 13C1, partial genome
+Length=35840
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10573  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10678
+
+
+>MH121081.1 Human mastadenovirus C strain 12C1, partial genome
+Length=35893
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10560  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10665
+
+
+>MH121080.1 Human mastadenovirus C strain 11C2, partial genome
+Length=35848
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10550  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10655
+
+
+>MH121079.1 Human mastadenovirus C strain 10C2, partial genome
+Length=35843
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10552  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10657
+
+
+>MH121078.1 Human mastadenovirus C strain 9C2, partial genome
+Length=35845
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10566  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10671
+
+
+>MH121077.1 Human mastadenovirus C strain 8C2, partial genome
+Length=35783
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10576  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10681
+
+
+>MH121076.1 Human mastadenovirus C strain 7C1, partial genome
+Length=35835
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10572  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10677
+
+
+>MH121075.1 Human mastadenovirus C strain 6C1, partial genome
+Length=35859
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10510  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10615
+
+
+>MH121074.1 Human mastadenovirus C strain 5C1, partial genome
+Length=35915
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10567  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10672
+
+
+>MH121073.1 Human mastadenovirus C strain 4C1, partial genome
+Length=35999
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10648  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10753
+
+
+>MH121070.1 Human mastadenovirus C strain 2C2, partial genome
+Length=35783
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10577  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10682
+
+
+>MF315029.1 Human mastadenovirus C isolate human/CHN/BJ09/2013/[P1/H2/F2], 
+complete genome
+Length=35958
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10664  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10769
+
+
+>MF315028.1 Human mastadenovirus C isolate human/CHN/BJ04/2012/[P1/H2/F2], 
+complete genome
+Length=35953
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10656  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10761
+
+
+>MF681662.1 Human mastadenovirus C strain HAdV-5var, complete 
+genome
+Length=35805
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10619  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10724
+
+
+>KX384959.1 Human adenovirus 2 strain T215/Ft Jackson South Carolina 
+USA/2002, complete genome
+Length=35868
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10622  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10727
+
+
+>KX757040.1 Mammalian expression vector pMT2-PL, complete sequence
+Length=5908
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6     TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+             |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  2198  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  2303
+
+
+>LC068720.1 Human adenovirus 6 DNA, nearly complete genome, strain: 
+1050158
+Length=35735
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10608  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10713
+
+
+>LC068719.1 Human adenovirus 6 DNA, nearly complete genome, strain: 
+1050156
+Length=35745
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10637  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10742
+
+
+>LC068718.1 Human adenovirus 6 DNA, nearly complete genome, strain: 
+1040502
+Length=35774
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10643  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10748
+
+
+>LC068717.1 Human adenovirus 6 DNA, nearly complete genome, strain: 
+1040264
+Length=35746
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10623  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10728
+
+
+>LC068715.1 Human adenovirus 6 DNA, nearly complete genome, strain: 
+940162
+Length=35776
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10645  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10750
+
+
+>LC068714.1 Human adenovirus 6 DNA, nearly complete genome, strain: 
+930113
+Length=35758
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10636  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10741
+
+
+>LC068713.1 Human adenovirus 6 DNA, nearly complete genome, strain: 
+870550
+Length=35698
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10576  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10681
+
+
+>LC068712.1 Human adenovirus 6 DNA, nearly complete genome, strain: 
+870550
+Length=35779
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10647  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10752
+
+
+>KR699642.1 Human mastadenovirus C strain CBJ113, complete genome
+Length=35926
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10643  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10748
+
+
+>KF951595.1 Human adenovirus C strain DD28, complete genome
+Length=35775
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10644  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10749
+
+
+>KF999653.1 Human adenovirus C isolate 300_VA3 VA RNA gene, partial 
+sequence
+Length=478
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6    TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+            |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  61   TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  166
+
+
+>KF999652.1 Human adenovirus C isolate 137_VA3 VA RNA gene, partial 
+sequence
+Length=251
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6    TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+            |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  59   TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  164
+
+
+>KF999651.1 Human adenovirus C isolate 120_VA3 VA RNA gene, partial 
+sequence
+Length=315
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6    TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+            |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  60   TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  165
+
+
+>KF268310.1 Human adenovirus C strain human/USA/Pitts_00109/1992/2[P2H2F2], 
+complete genome
+Length=35690
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10479  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10584
+
+
+>KF268130.1 Human adenovirus C strain human/USA/UFL_Adv2/2004/2[P2H2F2], 
+complete genome
+Length=35931
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10643  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10748
+
+
+>KC543436.1 Human mastadenovirus C strain BR/PR 777/08 VA RNA 
+gene, partial sequence
+Length=444
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6    TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+            |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  59   TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  164
+
+
+>KC543432.1 Human mastadenovirus C strain BR/PR 3205/08 VA RNA 
+gene, partial sequence
+Length=444
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6    TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+            |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  59   TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  164
+
+
+>KC543431.1 Human mastadenovirus C strain BR/PR 3204/08 VA RNA 
+gene, partial sequence KC543433.1 Human mastadenovirus C strain 
+BR/PR 3219/08 VA RNA gene, partial sequence KC543434.1 
+Human mastadenovirus C strain BR/PR 3252/08 VA RNA gene, partial 
+sequence
+Length=447
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6    TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+            |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  59   TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  164
+
+
+>KC543430.1 Human mastadenovirus C strain BR/PR 291/04 VA RNA 
+gene, partial sequence
+Length=447
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6    TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+            |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  59   TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  164
+
+
+>KC543429.1 Human mastadenovirus C strain BR/PR 2357/08 VA RNA 
+gene, partial sequence KC543435.1 Human mastadenovirus C strain 
+BR/PR 33/04 VA RNA gene, partial sequence
+Length=447
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6    TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+            |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  59   TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  164
+
+
+>KC543428.1 Human mastadenovirus C strain BR/PR 1971/02 VA RNA 
+gene, partial sequence
+Length=345
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6    TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+            |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  59   TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  164
+
+
+>KC543426.1 Human mastadenovirus C strain BR/PR 1335/02 VA RNA 
+gene, partial sequence
+Length=452
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6    TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+            |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  37   TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  142
+
+
+>JX173086.1 Human adenovirus C strain human/USA/VT13862/2004/1[P1H1F1], 
+complete genome
+Length=36002
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10660  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10765
+
+
+>JX173085.1 Human adenovirus C strain human/USA/VT2612/2003/1[P1H1F1], 
+complete genome
+Length=36006
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10660  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10765
+
+
+>JX173083.1 Human adenovirus C strain human/USA/VT2672/2003/1[P1H1F1], 
+complete genome
+Length=36003
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10657  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10762
+
+
+>JX173080.1 Human adenovirus C strain human/EGY/E13/2001/1[P1H1F1], 
+complete genome
+Length=35936
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10646  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10751
+
+
+>JX173079.1 Human adenovirus C strain human/ARG/A15932/2002/2[P2H2F2], 
+complete genome
+Length=35925
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10639  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10744
+
+
+>JX173078.1 Human adenovirus C strain human/ARG/A15812/2000/1[P1H1F1], 
+complete genome
+Length=35989
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10648  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10753
+
+
+>JX173077.1 Human adenovirus C strain human/ARG/A8649/2005/2[P2H2F2], 
+complete genome
+Length=35940
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10644  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10749
+
+
+>JX423389.1 Human adenovirus C strain human/USA/ak31_AdV6/2007/6[P6H6F6], 
+complete genome
+Length=35747
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10627  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10732
+
+
+>HQ413315.1 Human adenovirus 6 isolate Tonsil 99, complete genome
+Length=35759
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10642  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10747
+
+
+>HQ003817.1 Human adenovirus C strain human/RUS/16700/2001/57[P1H57F6], 
+complete genome
+Length=35818
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10658  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10763
+
+
+>FJ349096.1 Human adenovirus 6 strain Tonsil 99 prototype, complete 
+genome
+Length=35758
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10643  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10748
+
+
+>AF369965.1 Cloning vector pHelper, complete sequence
+Length=11635
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Minus
+
+Query  6     TCGCAAGGGTATCATGGCGGACGACCGGG-TTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+             ||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  9062  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  8957
+
+
+>U47294.2 Cloning vector pAdVantage<TM>, complete sequence
+Length=4392
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6    TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+            |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  810  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  915
+
+
+>U52533.1 Human adenovirus type 6 virus-associated RNA pre-terminal 
+protein (pTP) and 52,55K protein genes, partial cds
+Length=567
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6    TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+            |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  146  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  251
+
+
+>M10228.1 Adenovirus type 2 VAI gene, 5' flank
+Length=215
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6    TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+            |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  41   TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  146
+
+
+>J01917.1 Adenovirus type 2, complete genome
+Length=35937
+
+ Score = 183 bits (99),  Expect = 9e-43
+ Identities = 104/106 (98%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10640  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10745
+
+
+>LC504572.1 Human mastadenovirus C K19-85 DNA, complete genome
+Length=35921
+
+ Score = 178 bits (96),  Expect = 4e-41
+ Identities = 103/106 (97%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10651  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCTCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10756
+
+
+>MK165453.1 Human mastadenovirus C isolate SX-2004-327, complete 
+genome
+Length=35932
+
+ Score = 178 bits (96),  Expect = 4e-41
+ Identities = 103/106 (97%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| |||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10640  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCTGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10745
+
+
+>MK241690.1 Human adenovirus sp. isolate DT5, complete genome
+Length=35908
+
+ Score = 178 bits (96),  Expect = 4e-41
+ Identities = 103/106 (97%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| |||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10612  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10717
+
+
+>MH121096.1 Human mastadenovirus C strain 27C2, partial genome
+Length=35828
+
+ Score = 178 bits (96),  Expect = 4e-41
+ Identities = 103/106 (97%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| |||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10547  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGAATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10652
+
+
+>LC068716.1 Human adenovirus 6 DNA, nearly complete genome, strain: 
+1030787
+Length=35778
+
+ Score = 178 bits (96),  Expect = 4e-41
+ Identities = 103/106 (97%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| |||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10643  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10748
+
+
+>KM190941.1 Human mastadenovirus C isolate VIROAF12, partial genome
+Length=34585
+
+ Score = 178 bits (96),  Expect = 4e-41
+ Identities = 103/106 (97%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| |||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10597  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10702
+
+
+>KF268199.1 Human adenovirus C strain human/USA/UFL_Adv5/2008/5[P2/H5/F5], 
+complete genome
+Length=35928
+
+ Score = 178 bits (96),  Expect = 4e-41
+ Identities = 103/106 (97%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| |||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10655  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10760
+
+
+>KF268129.1 Human adenovirus C strain human/USA/UFL_Adv6/2005/6[P6H6F6], 
+complete genome
+Length=35979
+
+ Score = 178 bits (96),  Expect = 4e-41
+ Identities = 103/106 (97%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| |||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10665  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10770
+
+
+>KC543437.1 Human mastadenovirus C strain BR/PR 840 1998 VA RNA 
+gene, partial sequence
+Length=447
+
+ Score = 178 bits (96),  Expect = 4e-41
+ Identities = 103/106 (97%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6    TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+            |||||||||||||||||||||||||| |||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  59   TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  164
+
+
+>JX173081.1 Human adenovirus C strain human/EGY/E53/2001/2[P2H2F2], 
+complete genome
+Length=35928
+
+ Score = 178 bits (96),  Expect = 4e-41
+ Identities = 103/106 (97%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGAC-CGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||  ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10641  TCGCAAGGGTATCATGGCGGACGACTGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10746
+
+
+>MF044052.1 human adenovirus 2 isolate HK91, complete genome
+Length=35954
+
+ Score = 172 bits (93),  Expect = 2e-39
+ Identities = 102/106 (96%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| |||||||| ||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10667  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGTATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10772
+
+
+>MH325116.1 Vector delprot-delAdPol, complete sequence
+Length=38585
+
+ Score = 172 bits (93),  Expect = 2e-39
+ Identities = 102/106 (96%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6     TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+             |||||||||||||||||||||||||| |||||||| ||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  9270  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGTATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  9375
+
+
+>MH325115.1 Vector AdEvolve-DEST, complete sequence
+Length=41275
+
+ Score = 172 bits (93),  Expect = 2e-39
+ Identities = 102/106 (96%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| |||||||| ||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10574  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGTATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10679
+
+
+>MH325114.1 Vector tTAmut.GFP, complete sequence
+Length=39266
+
+ Score = 172 bits (93),  Expect = 2e-39
+ Identities = 102/106 (96%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6     TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+             |||||||||||||||||||||||||| |||||||| ||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  8530  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGTATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  8635
+
+
+>MH325113.1 Vector tTAwt.mCherry, complete sequence
+Length=39231
+
+ Score = 172 bits (93),  Expect = 2e-39
+ Identities = 102/106 (96%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6     TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+             |||||||||||||||||||||||||| |||||||| ||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  8530  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGTATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  8635
+
+
+>MH325112.1 Vector AdCFP, complete sequence
+Length=39773
+
+ Score = 172 bits (93),  Expect = 2e-39
+ Identities = 102/106 (96%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6     TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+             |||||||||||||||||||||||||| |||||||| ||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  9843  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGTATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  9948
+
+
+>MK044347.1 Vector CFP.delAdPol.GFP, complete sequence
+Length=40621
+
+ Score = 172 bits (93),  Expect = 2e-39
+ Identities = 102/106 (96%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6     TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+             |||||||||||||||||||||||||| |||||||| ||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  9270  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGTATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  9375
+
+
+>MK044346.1 Vector LeuRS.Ad, complete sequence
+Length=41154
+
+ Score = 172 bits (93),  Expect = 2e-39
+ Identities = 102/106 (96%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| |||||||| ||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10453  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGTATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10558
+
+
+>MK044345.1 Vector Cre.Ad, complete sequence
+Length=39527
+
+ Score = 172 bits (93),  Expect = 2e-39
+ Identities = 102/106 (96%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6     TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+             |||||||||||||||||||||||||| |||||||| ||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  8826  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGTATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  8931
+
+
+>KX529075.1 Cloning vector pAxCALRL, complete sequence
+Length=45883
+
+ Score = 172 bits (93),  Expect = 2e-39
+ Identities = 102/106 (96%), Gaps = 1/106 (1%)
+ Strand=Plus/Minus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACCGGG-TTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              ||||||||||||||||||||||||||||| ||||| ||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  38529  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGTATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  38424
+
+
+>KX589554.1 Cloning vector pAxCALGL, complete sequence
+Length=45889
+
+ Score = 172 bits (93),  Expect = 2e-39
+ Identities = 102/106 (96%), Gaps = 1/106 (1%)
+ Strand=Plus/Minus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACCGGG-TTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              ||||||||||||||||||||||||||||| ||||| ||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  38535  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGTATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  38430
+
+
+>KF429754.1 Human adenovirus C strain human/USA/Pitts_00149/1990/5[P5H5F5]F268310, 
+complete genome
+Length=35911
+
+ Score = 172 bits (93),  Expect = 2e-39
+ Identities = 102/106 (96%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| |||||||| ||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10644  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGTATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10749
+
+
+>KF268127.1 Human adenovirus C strain human/USA/CL_42/1988/5[P5H5F5], 
+complete genome
+Length=35931
+
+ Score = 172 bits (93),  Expect = 2e-39
+ Identities = 102/106 (96%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| |||||||| ||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10650  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGTATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10755
+
+
+>JX173084.1 Human adenovirus C strain human/USA/VT5544/2003/2[P2H2F2], 
+complete genome
+Length=35923
+
+ Score = 172 bits (93),  Expect = 2e-39
+ Identities = 102/106 (96%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| |||||||| ||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10631  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGTATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10736
+
+
+>JX173082.1 Human adenovirus C strain human/USA/VT384/2003/1[P1H1F1], 
+complete genome
+Length=35993
+
+ Score = 172 bits (93),  Expect = 2e-39
+ Identities = 102/106 (96%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| |||||||| ||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10657  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGTATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10762
+
+
+>JN387044.1 Recombination vector pAdHTS, complete sequence
+Length=34579
+
+ Score = 172 bits (93),  Expect = 2e-39
+ Identities = 102/106 (96%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6     TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+             |||||||||||||||||||||||||| |||||||| ||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  9001  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGTATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  9106
+
+
+>JF745946.1 Synthetic construct Delta24 E1A (E1a del919-942), 
+pIX-RGD (pIXFlag45AngstromRGD4C), and Fiber-RGD (Fiber-RGD4C) 
+genes, complete cds
+Length=36084
+
+ Score = 172 bits (93),  Expect = 2e-39
+ Identities = 102/106 (96%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| |||||||| ||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10773  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGTATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10878
+
+
+>AF534906.1 Human adenovirus type 1 subgroup C, complete genome 
+MH121091.1 Human mastadenovirus C strain 22C1, partial genome
+Length=36001
+
+ Score = 172 bits (93),  Expect = 2e-39
+ Identities = 102/106 (96%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| |||||||| ||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10658  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGTATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10763
+
+
+>AY370909.2 Expression vector pAdEasy-1, complete sequence
+Length=33476
+
+ Score = 172 bits (93),  Expect = 2e-39
+ Identities = 102/106 (96%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| |||||||| ||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10829  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGTATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10934
+
+
+>AY339865.1 Human adenovirus C serotype 5, complete genome
+Length=35934
+
+ Score = 172 bits (93),  Expect = 2e-39
+ Identities = 102/106 (96%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| |||||||| ||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10650  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGTATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10755
+
+
+>AY601635.1 Human adenovirus type 5 strain NHRC Ad5FS 7151, complete 
+genome
+Length=35931
+
+ Score = 172 bits (93),  Expect = 2e-39
+ Identities = 102/106 (96%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| |||||||| ||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10650  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGTATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10755
+
+
+>AY046510.1 Adenoviral expression vector Ad-hiNOS, complete sequence
+Length=35764
+
+ Score = 172 bits (93),  Expect = 2e-39
+ Identities = 102/106 (96%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| |||||||| ||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  12358  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGTATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  12463
+
+
+>AF323988.1 EGFP expression vector Ad-EGFP, complete sequence
+Length=33007
+
+ Score = 172 bits (93),  Expect = 2e-39
+ Identities = 102/106 (96%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6     TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+             |||||||||||||||||||||||||| |||||||| ||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  9601  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGTATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  9706
+
+
+>X02996.1 Adenovirus type 5 left 32% of the genome (coordinates 
+0% to 32.39% as measured by <ad2>)
+Length=11570
+
+ Score = 172 bits (93),  Expect = 2e-39
+ Identities = 102/106 (96%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| |||||||| ||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10650  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGTATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10755
+
+
+>U52532.1 Human adenovirus type 1 virus-associated RNA pre-terminal 
+protein (pTP) and 52,55K protein genes, partial cds
+Length=568
+
+ Score = 172 bits (93),  Expect = 2e-39
+ Identities = 102/106 (96%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6    TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+            |||||||||||||||||||||||||| |||||||| ||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  146  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGTATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  251
+
+
+>M73260.1 Mastadenovirus h5 gene, complete genome
+Length=35935
+
+ Score = 172 bits (93),  Expect = 2e-39
+ Identities = 102/106 (96%), Gaps = 1/106 (1%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              |||||||||||||||||||||||||| |||||||| ||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  10650  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAGCCCCGTATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10755
+
+
+>M10281.1 Adenovirus VA RNA with an La antigen binding site
+Length=161
+
+ Score = 169 bits (91),  Expect = 2e-38
+ Identities = 103/108 (95%), Gaps = 4/108 (4%)
+ Strand=Plus/Plus
+
+Query  6    TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTG-ATCCATG-CGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+            |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||| |||| || ||||||||||||||||||||||||||||||||||| |||
+Sbjct  31   TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGTATCC-TGACGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  137
+
+
+>KC543427.1 Human mastadenovirus C strain BR/PR 1360/01 VA RNA 
+gene, partial sequence
+Length=412
+
+ Score = 141 bits (76),  Expect = 5e-30
+ Identities = 83/86 (97%), Gaps = 2/86 (2%)
+ Strand=Plus/Plus
+
+Query  27   CGA-CC-GGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+            ||| || ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||
+Sbjct  17   CGATCCGGGGTTCGAACCCCGGATCCGGCCGTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  102
+
+
+>FJ025926.1 Simian adenovirus 40.2, complete genome
+Length=37729
+
+ Score = 117 bits (63),  Expect = 9e-23
+ Identities = 97/112 (87%), Gaps = 7/112 (6%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGG--C---C-GTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              ||||||||||||||||||||| | ||  ||||||| |||||| |||||  |   | ||||||| ||||||| |||||||||||||||||||||||||||||||||||| |||
+Sbjct  10706  TCGCAAGGGTATCATGGCGGAGGGCCTCGGTTCGAGCCCCGGGTCCGGGCCGGACGGTCCGCCATGATCCACGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10817
+
+
+>FJ025907.1 Simian adenovirus 40.1, complete genome
+Length=37718
+
+ Score = 117 bits (63),  Expect = 9e-23
+ Identities = 97/112 (87%), Gaps = 7/112 (6%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGG--C---C-GTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              ||||||||||||||||||||| | ||  ||||||| |||||| |||||  |   | ||||||| ||||||| |||||||||||||||||||||||||||||||||||| |||
+Sbjct  10712  TCGCAAGGGTATCATGGCGGAGGGCCTCGGTTCGAGCCCCGGGTCCGGGCCGGACGGTCCGCCATGATCCACGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10823
+
+
+>FJ025906.1 Simian adenovirus 31.1, complete genome
+Length=37828
+
+ Score = 117 bits (63),  Expect = 9e-23
+ Identities = 97/112 (87%), Gaps = 7/112 (6%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGG--C---C-GTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              ||||||||||||||||||||| | ||  ||||||| |||||| |||||  |   | ||||||| ||||||| |||||||||||||||||||||||||||||||||||| |||
+Sbjct  10724  TCGCAAGGGTATCATGGCGGAGGGCCTCGGTTCGAGCCCCGGGTCCGGGCCGGACGGTCCGCCATGATCCACGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10835
+
+
+>FJ025905.1 Simian adenovirus 34, complete genome
+Length=37799
+
+ Score = 117 bits (63),  Expect = 9e-23
+ Identities = 97/112 (87%), Gaps = 7/112 (6%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGG--C---C-GTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              ||||||||||||||||||||| | ||  ||||||| |||||| |||||  |   | ||||||| ||||||| |||||||||||||||||||||||||||||||||||| |||
+Sbjct  10709  TCGCAAGGGTATCATGGCGGAGGGCCTCGGTTCGAGCCCCGGGTCCGGGCCGGACGGTCCGCCATGATCCACGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10820
+
+
+>FJ025904.1 Simian adenovirus 31.2, complete genome
+Length=37860
+
+ Score = 117 bits (63),  Expect = 9e-23
+ Identities = 97/112 (87%), Gaps = 7/112 (6%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGG--C---C-GTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              ||||||||||||||||||||| | ||  ||||||| |||||| |||||  |   | ||||||| ||||||| |||||||||||||||||||||||||||||||||||| |||
+Sbjct  10737  TCGCAAGGGTATCATGGCGGAGGGCCTCGGTTCGAGCCCCGGGTCCGGGCCGGACGGTCCGCCATGATCCACGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGACGTC  10848
+
+
+>FJ025903.1 Simian adenovirus 42.1, complete genome
+Length=37786
+
+ Score = 106 bits (57),  Expect = 2e-19
+ Identities = 95/112 (85%), Gaps = 8/112 (7%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGG--C---C-GTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              ||||||||||||||||||||| | ||  ||||||| ||||||  ||||  |   | ||||||| ||||||| ||||||||||||||||||||||||||||||| |||| |||
+Sbjct  10679  TCGCAAGGGTATCATGGCGGAGGGCCTCGGTTCGAGCCCCGGGCCCGGGCCGGACGGTCCGCCATGATCCACGCGGTTACCGCCCGCGTGTCGAACCCAGGTG-GCGACGTC  10789
+
+
+>FJ025902.1 Simian adenovirus 42.2, complete genome FJ025925.1 
+Simian adenovirus 42.3, complete genome
+Length=37820
+
+ Score = 106 bits (57),  Expect = 2e-19
+ Identities = 95/112 (85%), Gaps = 8/112 (7%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGG--C---C-GTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              ||||||||||||||||||||| | ||  ||||||| ||||||  ||||  |   | ||||||| ||||||| ||||||||||||||||||||||||||||||| |||| |||
+Sbjct  10703  TCGCAAGGGTATCATGGCGGAGGGCCTCGGTTCGAGCCCCGGGCCCGGGCCGGACGGTCCGCCATGATCCACGCGGTTACCGCCCGCGTGTCGAACCCAGGTG-GCGACGTC  10813
+
+
+>FJ025899.1 Simian adenovirus 44, complete genome
+Length=37711
+
+ Score = 106 bits (57),  Expect = 2e-19
+ Identities = 95/112 (85%), Gaps = 8/112 (7%)
+ Strand=Plus/Plus
+
+Query  6      TCGCAAGGGTATCATGGCGGACGACC-GGGTTCGAACCCCGGATCCGG--C---C-GTCCGCCGTGATCCATGCGGTTACCGCCCGCGTGTCGAACCCAGGTGTGCGAGGTC  110
+              ||||||||||||||||||||| | ||  ||||||| ||||||  ||||  |   | ||||||| ||||||| ||||||||||||||||||||||||||||||| |||| |||
+Sbjct  10700  TCGCAAGGGTATCATGGCGGAGGGCCTCGGTTCGAGCCCCGGGCCCGGGCCGGACGGTCCGCCATGATCCACGCGGTTACCGCCCGCGTGTCGAACCCAGGTG-GCGACGTC  10810
+
+
+>K00523.1 Adenovirus 2 VAI RNA gene promoter region
+Length=62
+
+ Score = 69.4 bits (37),  Expect = 3e-08
+ Identities = 40/41 (98%), Gaps = 1/41 (2%)
+ Strand=Plus/Plus
+
+Query  6   TCGCAAGGGTATCATGGCGGACGACCGGG-TTCGAACCCCG  45
+           ||||||||||||||||||||||||||||| |||||||||||
+Sbjct  22  TCGCAAGGGTATCATGGCGGACGACCGGGGTTCGAACCCCG  62
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 20455773305016
+
+
+  Database: ncbi_db/nt
+    Posted date:  Mar 10, 2020  2:33 PM
+  Number of letters in database: 260,722,916,040
+  Number of sequences in database:  55,908,648
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

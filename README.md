@@ -5,12 +5,15 @@ SYSTEM REQUIREMENTS
 ====
 Hardware Requirments:
 ----
-RNAcmap predictor requires only a standard computer with around 16 GB RAM to support the in-memory operations for RNAs sequence length less than 1,000.
+RNAcmap predictor requires only a standard computer with around 32 GB RAM to support the in-memory operations for RNAs sequence length less than 500.
 
 Software Requirments:
 ----
-* [Python3](https://docs.python-guide.org/starting/install3/linux/)
-* [virtualenv](https://virtualenv.pypa.io/en/latest/installation/) or [Anaconda](https://anaconda.org/anaconda/virtualenv)
+* [NCBI's nt database](ftp://ftp.ncbi.nlm.nih.gov/blast/db/)
+* [BLASTN webpage](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download)
+* [Infernal webpage](http://eddylab.org/infernal/)
+* [Python3](https://docs.python-guide.org/starting/install3/linux/) (optinal if using SPOT-RNA)
+* [virtualenv](https://virtualenv.pypa.io/en/latest/installation/) or [Anaconda](https://anaconda.org/anaconda/virtualenv) (optinal if using SPOT-RNA)
 
 
 RNAcmap has been tested on Ubuntu 14.04, 16.04, and 18.04 operating systems.
@@ -36,44 +39,38 @@ If BLASTN tool is not installed in the system, please use follwing 2 command to 
 5. `wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.10.0+-x64-linux.tar.gz'`
 6. `tar -xvzf ncbi-blast-2.10.0+-x64-linux.tar.gz && rm ncbi-blast-2.10.0+-x64-linux.tar.gz`
 
-#The following 2 commands for cloning LinearPartition respository from GITHUB and then making files. In case of any problem and issue, please refer to the [LinearPartition](https://github.com/LinearFold/LinearPartition) repository.
+Either install **RNAfold** or **SPOT-RNA** predictor depending upon which Secondary Structure predictor you want to use. Installation of RNAfold will take 15-20 mins and 2-3 mins for SPOT-RNA:<br />
 
-#7. `git clone 'https://github.com/LinearFold/LinearPartition.git'`
-#8. `cd LinearPartition/ && make && cd ../`
+7. `./install_RNAfold.sh` or `./install_SPOT-RNA.sh`
 
-Either follow **RNAfold** column steps or **SPOT-RNA** column steps depending upon which Secondary Structure predictor you want to use. Installation of RNAfold will take 15-20 mins and 5-10 mins for SPOT-RNA:<br />
-
-#|  | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; virtualenv | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conda |
-#| :- | :-------- | :--- |
-| 7. | `./install_RNAfold.sh` | `./install_SPOT-RNA.sh` |
-#| 10. | `source ./venv/bin/activate` | `conda activate venv` | 
-#| 11. | *To run RNAsnap2 on CPU:*<br /> <br /> `pip install tensorflow==1.14.0` <br /> <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *or* <br /> <br />*To run RNAsnap2 on GPU:*<br /> <br /> `pip install tensorflow-gpu==1.14.0` | *To run RNAsnap2 on CPU:*<br /> <br /> `conda install tensorflow==1.14.0` <br /> <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *or* <br /> <br />*To run RNAsnap2 on GPU:*<br /> <br /> `conda install tensorflow-gpu==1.14.0` |
-#| 12. | `pip install -r requirements.txt` | `while read p; do conda install --yes $p; done < requirements.txt` | 
-
-To run the RNAcmap
------
-Before running RNAcmap, please download the reference database ([NCBI's nt database](ftp://ftp.ncbi.nlm.nih.gov/blast/db/)) for BLASTN and INFERNAL. The following command can used for NCBI's nt database. Make sure there is enough space on the system as NCBI's nt database is of size around 270 GB after extraction and it can take couple of hours to download depending on the internet speed. In case of any issue, please rerfer to [NCBI's database website](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download).
+Download the reference database ([NCBI's nt database](ftp://ftp.ncbi.nlm.nih.gov/blast/db/)) for BLASTN and INFERNAL. The following command can used for NCBI's nt database. Make sure there is enough space on the system as NCBI's nt database is of size around 270 GB after extraction and it can take couple of hours to download depending on the internet speed. In case of any issue, please rerfer to [NCBI's database website](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download).
 
 ```
-wget -c "ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nt.gz -O ./nt_database && gunzip ./nt_database/nt.gz
+wget -c "ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nt.gz -O ./nt_database && gunzip ./nt_database/nt.gz"
 ```
 
-This NCBI's database need to formated to use with BLASTN. To format the NCBI's database, the following command can be used. Please make sure system have enough space as formated database is of size around 120 GB and it can few hours for it.
+This NCBI's database need to formated to use with BLASTN tool. To format the NCBI's database, the following command can be used. Please make sure system have enough space as formated database is of size around 120 GB in addition to appox. 270 GB from previous step and it can few hours for it.
 ```
 ./ncbi-blast-2.10.0+/bin/makeblastdb -in ./nt_database -dbtype nucl
 ```
 
+To install the DCA predictor, please run the following command:<br />
+
+8. `./install_GREMLIN.sh`
+
+To run the RNAcmap
+-----
 To run the RNAcmap, the following command can be used.
 ```
-./run_rnacmap.sh inputs/sample_seq.fasta
+./sample.sh inputs/sample_seq.fasta RNAfold
 ```
-The output of this command will be the "*.rnasnap2_profile" file in the "outputs" folder consists of predicted solvent accessibility by RNAsnap2 for a given input RNA sequence.
+The final output will be the "*.dca" file in the "outputs" folder consists of predicted Direct Coupling Analysis (DCA) by RNAcmap for a given input RNA sequence.
 
 References
 ====
 If you use RNAcmap for your research please cite the following papers:
 ----
-Zhang, T., Singh, J., Litfin, T., Zhan, J., Paliwal, K., Zhou, Y., 2020. RNAcmap: A Fully Automatic Method for Predicting Contact Maps of RNAs by Evolutionary Coupling Analysis.
+Zhang, T., Singh, J., Litfin, T., Zhan, J., Paliwal, K., Zhou, Y., 2020. RNAcmap: A Fully Automatic Method for Predicting Contact Maps of RNAs by Evolutionary Coupling Analysis. (Under Review)
 
 Other references:
 ----
@@ -94,5 +91,5 @@ Mozilla Public License 2.0
 
 Contact
 ====
-jaswinder.singh3@griffithuni.edu.au, yaoqi.zhou@griffith.edu.au
+jaswinder.singh3@griffithuni.edu.au, tongchuan.zhang@griffithuni.edu.au, yaoqi.zhou@griffith.edu.au
 

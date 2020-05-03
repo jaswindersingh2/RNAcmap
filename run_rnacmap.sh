@@ -26,8 +26,20 @@ $path_blastn/blastn -db $path_blastn_database -query $input -out $input_dir/$seq
 ./reformat.pl fas sto $input_dir/$seq_id.aln $input_dir/$seq_id.sto
 
 ######## predict secondary ################
-./RNAfold/bin/RNAfold $input | awk '{print $1}' | tail -n +3 > $input_dir/$seq_id.dbn
-
+if [[ $2 == 'SPOT-RNA' ]]; then
+    echo "Running SPOT-RNA secondary structure predictor"
+    cd SPOT-RNA
+	source ./venv/bin/activate
+    python3 SPOT-RNA.py --inputs ../$input_dir/$seq_id.fasta --outputs ../$input_dir/
+    deactivate
+    cd ../k2n_standalone
+    python knotted2nested.py -f bpseq -F vienna  ../$input_dir/$seq_id.bpseq | tail -n +3 > ../$input_dir/$seq_id.dbn
+	cd ../
+else
+    echo "Running RNAfold secondary structure predictor"
+	./RNAfold/bin/RNAfold $input | awk '{print $1}' | tail -n +3 > $input_dir/$seq_id.dbn
+fi
+0
 ################ reformat ss with according to gaps in reference sequence of .sto file from blastn ################
 for i in `awk '{print $2}' $input_dir/$seq_id.sto | head -n5 | tail -n1 | grep -b -o - | sed 's/..$//'`; do sed -i "s/./&-/$i" $input_dir/$seq_id.dbn; done
 
@@ -35,17 +47,18 @@ for i in `awk '{print $2}' $input_dir/$seq_id.sto | head -n5 | tail -n1 | grep -
 head -n -1 $input_dir/$seq_id.sto > $input_dir/temp.sto
 echo "#=GC SS_cons                     "`cat $input_dir/$seq_id.dbn` > $input_dir/temp.txt
 cat $input_dir/temp.sto $input_dir/temp.txt > $input_dir/$seq_id.sto
-echo "//" >> $input_dir/$id.sto
-
+echo "//" >> $input_dir/$seq_id.sto
 
 ######## run infernal ################
 $path_infernal/cmbuild --hand -F $input_dir/$seq_id.cm $input_dir/$seq_id.sto
 $path_infernal/cmcalibrate $input_dir/$seq_id.cm
-$path_infernal/cmsearch -o $input_dir/$seq_id.out --cpu 30 --incE 10.0 $input_dir/$seq_id.cm $path_infernal_database
+$path_infernal/cmsearch -o $input_dir/$seq_id.out -A $input_dir/$seq_id.msa --cpu 24 --incE 10.0 $input_dir/$seq_id.cm $path_infernal_database
 
 ######### reformat the output for dca input ###############
 $path_infernal/esl-reformat --replace acgturyswkmbdhvn:................ a2m $input_dir/$seq_id.msa > $input_dir/$seq_id.a2m
 
+######### reformat the output for dca input ###############
+./GREMLIN_CPP/gremlin_cpp -i $input_dir/$seq_id.a2m -o outputs/$seq_id.dca > outputs/$seq_id.log
 
 end=`date +%s`
 

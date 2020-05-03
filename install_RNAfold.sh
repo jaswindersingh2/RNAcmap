@@ -9,3 +9,5 @@ cd ViennaRNA-2.4.14
 ./configure --prefix=$working_dir/RNAfold
 make
 make install
+cd ../
+rm -r ViennaRNA-2.4.14
