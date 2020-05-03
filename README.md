@@ -9,7 +9,6 @@ RNAcmap predictor requires only a standard computer with around 32 GB RAM to sup
 
 Software Requirments:
 ----
-* [NCBI's nt database](ftp://ftp.ncbi.nlm.nih.gov/blast/db/)
 * [BLASTN](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download)
 * [Infernal](http://eddylab.org/infernal/)
 * [Python3](https://docs.python-guide.org/starting/install3/linux/) (optinal if using SPOT-RNA)
