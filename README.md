@@ -35,7 +35,7 @@ Either follow **virtualenv** column steps or **conda** column steps to create vi
 | :- | :-------- | :--- |
 | 3. | `virtualenv -p python3.6 venv_rnacmap` | `conda create -n venv_rnacmap python=3.6` |
 | 4. | `source ./venv_rnacmap/bin/activate` | `conda activate venv_rnacmap` | 
-| 5. | `pip install -r requirements.txt` | `while read p; do conda install --yes $p; done < requirements.txt` | 
+| 5. | `pip install -r requirements.txt && deactivate` | `while read p; do conda install --yes $p; done < requirements.txt && conda deactivate` | 
 
 If Infernal tool is alread installed in the system, please add path to binary files in line no. 9 of 'run_rnacmap.sh' file. In case, Infernal tool is not installed in the system, please use follwing 2 command to download and extract it. In case of any problem and issue regarding Infernal download, please refer to [Infernal webpage](http://eddylab.org/infernal/) as following commands only tested on Ubuntu 18.04, 64 bit system.
 
