@@ -58,6 +58,8 @@ else
 
 	######### reformat the output for dca input ###############
 	$path_infernal/esl-reformat --replace acgturyswkmbdhvn:................ a2m $input_dir/$seq_id.msa > $input_dir/$seq_id.a2m
+	awk '/^>/ {printf("\n%s\n",$0);next; } { printf("%s",$0);}  END {printf("\n");}' < $input_dir/$seq_id.a2m | sed '/^$/d' > $input_dir/temp.a2m # multiline fasta to single line fast
+    cat $input_dir/$seq_id.fasta $input_dir/temp.a2m > $input_dir/$seq_id.a2m # add query sequence at the top of MSA file
 fi
 
 ######### run dca predictor ###############
@@ -67,8 +69,13 @@ elif [[ $3 == 'mf_DCA' ]]; then
 	$path_matlab/matlab -nodisplay -nosplash -nodesktop < run_mfdca.m > outputs/$seq_id.log_mfDCA
     mv outputs/temp.dca outputs/$seq_id.dca_mfDCA
 else
-	./GREMLIN_CPP/gremlin_cpp -i $input_dir/$seq_id.a2m -o outputs/$seq_id.dca_gremlin > outputs/$seq_id.log_gremlin
+	./GREMLIN_CPP/gremlin_cpp -alphabet rna -i $input_dir/$seq_id.a2m -o outputs/$seq_id.dca_gremlin > outputs/$seq_id.log_gremlin
 fi
+
+############ save output in ct, bpseq and base-pair matrix #############
+source ./venv_rnacmap/bin/activate || conda activate venv_rnacmap
+python3 get_ss.py --inputs_path $input_dir --rna_id $seq_id --outputs outputs
+
 end=`date +%s`
 
 runtime=$((end-start))
