@@ -67,7 +67,6 @@ if [[ $3 == 'plmc' ]]; then
 	./plmc/bin/plmc -c outputs/$seq_id.dca_plmc -a -.ACGU -le 20 -lh 0.01 -m 50 $input_dir/$seq_id.a2m > outputs/$seq_id.log_plmc
 elif [[ $3 == 'mf_DCA' ]]; then
 	$path_matlab/matlab -nodisplay -nosplash -nodesktop < run_mfdca.m > outputs/$seq_id.log_mfDCA
-    mv outputs/temp.dca outputs/$seq_id.dca_mfDCA
 else
 	./GREMLIN_CPP/gremlin_cpp -alphabet rna -i $input_dir/$seq_id.a2m -o outputs/$seq_id.dca_gremlin > outputs/$seq_id.log_gremlin
 fi
