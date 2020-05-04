@@ -7,14 +7,14 @@ tar -xvzf SPOT-RNA-models.tar.gz && rm SPOT-RNA-models.tar.gz
 
 if hash virtualenv 2>/dev/null
     then
-        virtualenv -p python3.6 venv
-        source ./venv/bin/activate
+        virtualenv -p python3.6 venv_rnacmap
+        source ./venv_rnacmap/bin/activate
         pip install tensorflow==1.14.0 
 		pip install -r requirements.txt
 elif hash conda 2>/dev/null
     then
-        conda create -n venv python=3.6
-        conda activate venv
+        conda create -n venv_rnacmap python=3.6
+        conda activate venv_rnacmap
         conda install tensorflow==1.14.0 
         while read p; do conda install --yes $p; done < requirements.txt
 else

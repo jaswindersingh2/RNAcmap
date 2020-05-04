@@ -31,7 +31,7 @@ else
 	if [[ $2 == 'SPOT-RNA' ]]; then
 		echo "Running SPOT-RNA secondary structure predictor"
 		cd SPOT-RNA
-		source ./venv/bin/activate
+		source ./venv_rnacmap/bin/activate || conda activate venv_rnacmap
 		python3 SPOT-RNA.py --inputs ../$input_dir/$seq_id.fasta --outputs ../$input_dir/
 		deactivate
 		cd ../k2n_standalone
@@ -41,7 +41,7 @@ else
 		echo "Running RNAfold secondary structure predictor"
 		./RNAfold/bin/RNAfold $input | awk '{print $1}' | tail -n +3 > $input_dir/$seq_id.dbn
 	fi
-	0
+	
 	################ reformat ss with according to gaps in reference sequence of .sto file from blastn ################
 	for i in `awk '{print $2}' $input_dir/$seq_id.sto | head -n5 | tail -n1 | grep -b -o - | sed 's/..$//'`; do sed -i "s/./&-/$i" $input_dir/$seq_id.dbn; done
 
