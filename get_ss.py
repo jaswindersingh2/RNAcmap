@@ -26,7 +26,7 @@ def ct_file_output(pairs, seq, id, save_result_path):
     col6 = np.arange(1, len(seq) + 1, 1)
     temp = np.vstack((np.char.mod('%d', col1), col2, np.char.mod('%d', col3), np.char.mod('%d', col4),
                       np.char.mod('%d', col5), np.char.mod('%d', col6))).T
-    np.savetxt(os.path.join(save_result_path, str(id))+'.ct', (temp), delimiter='\t\t', fmt="%s", header=str(len(seq)) + '\t\t' + str(id) + '\t\t' + 'SPOT-RNA output\n', comments='')
+    np.savetxt(os.path.join(save_result_path, str(id))+'.ct', (temp), delimiter='\t\t', fmt="%s", header=str(len(seq)) + '\t\t' + str(id) + '\t\t' + 'RNAcmap\n', comments='')
 
     return
 
