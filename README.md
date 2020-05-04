@@ -13,7 +13,7 @@ Software Requirments:
 * [Infernal](http://eddylab.org/infernal/)
 * [MATLAB](https://au.mathworks.com/products/matlab.html) (optinal if using mf_DCA)
 * [Python3](https://docs.python-guide.org/starting/install3/linux/)
-* [virtualenv](https://virtualenv.pypa.io/en/latest/installation/) or [Anaconda](https://anaconda.org/anaconda/virtualenv) (optinal if using SPOT-RNA)
+* [virtualenv](https://virtualenv.pypa.io/en/latest/installation/) or [Anaconda](https://anaconda.org/anaconda/virtualenv)
 
 
 RNAcmap has been tested on Ubuntu 14.04, 16.04, and 18.04 operating systems.
