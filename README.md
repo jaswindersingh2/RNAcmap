@@ -35,7 +35,7 @@ Either follow **virtualenv** column steps or **conda** column steps to create vi
 
 |  | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; virtualenv | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conda |
 | :- | :-------- | :--- |
-| 3. | `virtualenv -p python3.6 venv` | `conda create -n venv python=3.6` |
+| 3. | `virtualenv -p python3.6 venv_rnacmap` | `conda create -n venv_rnacmap python=3.6` |
 | 4. | `source ./venv_rnacmap/bin/activate` | `conda activate venv_rnacmap` | 
 | 5. | `pip install -r requirements.txt` | `while read p; do conda install --yes $p; done < requirements.txt` | 
 
