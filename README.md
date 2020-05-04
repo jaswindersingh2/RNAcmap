@@ -11,6 +11,7 @@ Software Requirments:
 ----
 * [BLASTN](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download)
 * [Infernal](http://eddylab.org/infernal/)
+* [MATLAB](https://au.mathworks.com/products/matlab.html) (optinal if using mf_DCA)
 * [Python3](https://docs.python-guide.org/starting/install3/linux/) (optinal if using SPOT-RNA)
 * [virtualenv](https://virtualenv.pypa.io/en/latest/installation/) or [Anaconda](https://anaconda.org/anaconda/virtualenv) (optinal if using SPOT-RNA)
 
@@ -28,40 +29,37 @@ To install RNAcmap and it's dependencies following commands can be used in termi
 1. `git clone https://github.com/jaswindersingh2/RNAcmap.git`
 2. `cd RNAcmap`
 
-If Infernal tool is not installed in the system, please use follwing 2 command to download and extract it. In case of any problem and issue regarding Infernal download, please refer to [Infernal webpage](http://eddylab.org/infernal/) as following commands only tested on Ubuntu 18.04, 64 bit system.
+If Infernal tool is alread installed in the system, please add path to binary files in line no. 9 of 'run_rnacmap.sh' file. In case, Infernal tool is not installed in the system, please use follwing 2 command to download and extract it. In case of any problem and issue regarding Infernal download, please refer to [Infernal webpage](http://eddylab.org/infernal/) as following commands only tested on Ubuntu 18.04, 64 bit system.
 
 3. `wget 'eddylab.org/infernal/infernal-1.1.3-linux-intel-gcc.tar.gz'`
 4. `tar -xvzf infernal-*.tar.gz && rm infernal-*.tar.gz`
 
-If BLASTN tool is not installed in the system, please use follwing 2 command to download and extract it. In case of any problem and issue regarding BLASTN download, please refer to [BLASTN webpage](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download) as following commands only tested on Ubuntu 18.04, 64 bit system.
+If BLASTN tool is alread installed in the system, please add path to binary files in line no. 7 of 'run_rnacmap.sh' file. In case, BLASTN tool is not installed in the system, please use follwing 2 command to download and extract it. In case of any problem and issue regarding BLASTN download, please refer to [BLASTN webpage](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download) as following commands only tested on Ubuntu 18.04, 64 bit system.
 
 5. `wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.10.0+-x64-linux.tar.gz'`
 6. `tar -xvzf ncbi-blast-2.10.0+-x64-linux.tar.gz && rm ncbi-blast-2.10.0+-x64-linux.tar.gz`
 
-Either install **RNAfold** or **SPOT-RNA** predictor depending upon which Secondary Structure predictor you want to use. Installation of RNAfold will take 15-20 mins and 2-3 mins for SPOT-RNA:<br />
+Either install **RNAfold** or **SPOT-RNA** predictor depending upon which Secondary Structure predictor you want to use. Installation of RNAfold will take 15-20 mins and 2-3 mins for SPOT-RNA. Both the secondary structure can be installed as well if you want to predict for both predictors. In case of issue regarding installation of these predictors, please refer to more specific and detailed guide for [ViennaRNA](https://www.tbi.univie.ac.at/RNA/#download) and [SPOT-RNA](https://github.com/jaswindersingh2/SPOT-RNA).<br />
 
-7. `./install_RNAfold.sh` or `./install_SPOT-RNA.sh`
+7. `./install_RNAfold.sh` or/and `./install_SPOT-RNA.sh`
 
-Download the reference database ([NCBI's nt database](ftp://ftp.ncbi.nlm.nih.gov/blast/db/)) for BLASTN and INFERNAL. The following command can used for NCBI's nt database. Make sure there is enough space on the system as NCBI's nt database is of size around 270 GB after extraction and it can take couple of hours to download depending on the internet speed. In case of any issue, please rerfer to [NCBI's database website](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download).
+If NCBI's nt database already available in your system, please add path to database in line no. 8 and line 10 of 'run_rnacmap.sh' file.  Download the reference database ([NCBI's nt database](ftp://ftp.ncbi.nlm.nih.gov/blast/db/)) for BLASTN and INFERNAL. The following command can used for NCBI's nt database. Make sure there is enough space on the system as NCBI's nt database is of size around 270 GB after extraction and it can take couple of hours to download depending on the internet speed. In case of any issue, please rerfer to [NCBI's database website](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download).
 
-```
-8. wget -c "ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nt.gz -O ./nt_database && gunzip ./nt_database/nt.gz"
-```
+8. `wget -c "ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nt.gz -O ./nt_database && gunzip ./nt_database/nt.gz"`
 
 This NCBI's database need to formated to use with BLASTN tool. To format the NCBI's database, the following command can be used. Please make sure system have enough space as formated database is of size around 120 GB in addition to appox. 270 GB from previous step and it can few hours for it.
-```
-9. ./ncbi-blast-2.10.0+/bin/makeblastdb -in ./nt_database -dbtype nucl
-```
+
+9. `./ncbi-blast-2.10.0+/bin/makeblastdb -in ./nt_database -dbtype nucl`
 
 To install the DCA predictor, please run the following command:<br />
 
-10. `./install_GREMLIN.sh`
+10. `./install_GREMLIN.sh` or/and ``./install_plmc.sh``
 
 To run the RNAcmap
 -----
-To run the RNAcmap, the following command can be used.
+To run the RNAcmap, the following command can be used. Use either RNAfold or SPOT-RNA for secondary structure predictor and one DCA method among GREMLIN, plmc, and mfDCA as input argument.
 ```
-./run_rnacmap.sh inputs/sample_seq.fasta RNAfold
+./run_rnacmap.sh inputs/sample_seq.fasta RNAfold/SPOT-RNA GREMLIN/plmc/mfDCA
 ```
 The final output will be the "*.dca" file in the "outputs" folder consists of predicted Direct Coupling Analysis (DCA) by RNAcmap for a given input RNA sequence.
 

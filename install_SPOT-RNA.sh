@@ -18,5 +18,7 @@ elif hash conda 2>/dev/null
         conda install tensorflow==1.14.0 
         while read p; do conda install --yes $p; done < requirements.txt
 else
-	echo "virtualenv doesn't exists"
+	echo "Virtual environment doesn't exists. Therefore installing packages globally."
+	pip install tensorflow==1.14.0 
+	pip install -r requirements.txt
 fi
