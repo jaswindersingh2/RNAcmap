@@ -31,9 +31,9 @@ else
 	if [[ $2 == 'SPOT-RNA' ]]; then
 		echo "Running SPOT-RNA secondary structure predictor"
 		cd SPOT-RNA
-		source ./venv_rnacmap/bin/activate || conda activate venv_rnacmap
+		source ../venv_rnacmap/bin/activate || conda activate venv_rnacmap
 		python3 SPOT-RNA.py --inputs ../$input_dir/$seq_id.fasta --outputs ../$input_dir/
-		deactivate
+		deactivate || conda deactivate
 		cd ../k2n_standalone
 		python knotted2nested.py -f bpseq -F vienna  ../$input_dir/$seq_id.bpseq | tail -n +3 > ../$input_dir/$seq_id.dbn
 		cd ../

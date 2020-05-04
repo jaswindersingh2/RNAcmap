@@ -29,8 +29,6 @@ To install RNAcmap and it's dependencies following commands can be used in termi
 1. `git clone https://github.com/jaswindersingh2/RNAcmap.git`
 2. `cd RNAcmap`
 
-If Infernal tool is alread installed in the system, please add path to binary files in line no. 9 of 'run_rnacmap.sh' file. In case, Infernal tool is not installed in the system, please use follwing 2 command to download and extract it. In case of any problem and issue regarding Infernal download, please refer to [Infernal webpage](http://eddylab.org/infernal/) as following commands only tested on Ubuntu 18.04, 64 bit system.
-
 Either follow **virtualenv** column steps or **conda** column steps to create virtual environment and to install RNAcmap python dependencies given in table below:<br />
 
 |  | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; virtualenv | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conda |
@@ -39,6 +37,7 @@ Either follow **virtualenv** column steps or **conda** column steps to create vi
 | 4. | `source ./venv_rnacmap/bin/activate` | `conda activate venv_rnacmap` | 
 | 5. | `pip install -r requirements.txt` | `while read p; do conda install --yes $p; done < requirements.txt` | 
 
+If Infernal tool is alread installed in the system, please add path to binary files in line no. 9 of 'run_rnacmap.sh' file. In case, Infernal tool is not installed in the system, please use follwing 2 command to download and extract it. In case of any problem and issue regarding Infernal download, please refer to [Infernal webpage](http://eddylab.org/infernal/) as following commands only tested on Ubuntu 18.04, 64 bit system.
 
 6. `wget 'eddylab.org/infernal/infernal-1.1.3-linux-intel-gcc.tar.gz'`
 7. `tar -xvzf infernal-*.tar.gz && rm infernal-*.tar.gz`
