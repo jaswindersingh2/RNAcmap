@@ -4,15 +4,15 @@ input=$1
 input_dir=$(dirname $1)
 seq_id=$(basename $(basename $input) .fasta)
 
-path_blastn=./ncbi-blast-2.10.0+/bin/
-path_blastn_database=./nt_database/nt
-path_infernal=./infernal-1.1.3-linux-intel-gcc/binaries
-path_infernal_database=./nt_database/nt
+#path_blastn=./ncbi-blast-2.10.0+/bin/
+#path_blastn_database=./nt_database/nt
+#path_infernal=./infernal-1.1.3-linux-intel-gcc/binaries
+#path_infernal_database=./nt_database/nt
 
-#path_blastn=/home/jaswinder/Documents/project4/programs/ncbi-blast-2.10.0+/bin
-#path_blastn_database=/home/jaswinder/Downloads/ncbi_db/nt
-#path_infernal=/home/jaswinder/Documents/project4/programs/infernal-1.1.3-linux-intel-gcc/binaries
-#path_infernal_database=/home/jaswinder/Documents/project4/database/nt
+path_blastn=/home/jaswinder/Documents/project4/programs/ncbi-blast-2.10.0+/bin
+path_blastn_database=/home/jaswinder/Downloads/ncbi_db/nt
+path_infernal=/home/jaswinder/Documents/project4/programs/infernal-1.1.3-linux-intel-gcc/binaries
+path_infernal_database=/home/jaswinder/Documents/project4/database/nt
 
 #echo $input_dir/$seq_id.bla
 

@@ -45,17 +45,17 @@ Either install **RNAfold** or **SPOT-RNA** predictor depending upon which Second
 Download the reference database ([NCBI's nt database](ftp://ftp.ncbi.nlm.nih.gov/blast/db/)) for BLASTN and INFERNAL. The following command can used for NCBI's nt database. Make sure there is enough space on the system as NCBI's nt database is of size around 270 GB after extraction and it can take couple of hours to download depending on the internet speed. In case of any issue, please rerfer to [NCBI's database website](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download).
 
 ```
-wget -c "ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nt.gz -O ./nt_database && gunzip ./nt_database/nt.gz"
+8. wget -c "ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nt.gz -O ./nt_database && gunzip ./nt_database/nt.gz"
 ```
 
 This NCBI's database need to formated to use with BLASTN tool. To format the NCBI's database, the following command can be used. Please make sure system have enough space as formated database is of size around 120 GB in addition to appox. 270 GB from previous step and it can few hours for it.
 ```
-./ncbi-blast-2.10.0+/bin/makeblastdb -in ./nt_database -dbtype nucl
+9. ./ncbi-blast-2.10.0+/bin/makeblastdb -in ./nt_database -dbtype nucl
 ```
 
 To install the DCA predictor, please run the following command:<br />
 
-8. `./install_GREMLIN.sh`
+10. `./install_GREMLIN.sh`
 
 To run the RNAcmap
 -----
