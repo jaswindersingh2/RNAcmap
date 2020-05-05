@@ -51,7 +51,7 @@ Either install **RNAfold** or **SPOT-RNA** predictor depending upon which Second
 
 10. `./install_RNAfold.sh` or/and `./install_SPOT-RNA.sh`
 
-If NCBI's nt database already available in your system, please add path to database in line no. 8 and line 10 of 'run_rnacmap.sh' file.  Download the reference database ([NCBI's nt database](ftp://ftp.ncbi.nlm.nih.gov/blast/db/)) for BLASTN and INFERNAL. The following command can used for NCBI's nt database. Make sure there is enough space on the system as NCBI's nt database is of size around 270 GB after extraction and it can take couple of hours to download depending on the internet speed. In case of any issue, please rerfer to [NCBI's database website](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download).
+If NCBI's nt database already available in your system, please add path to database in line no. 8 and line 10 of 'run_rnacmap.sh' file.  Otherwise, download the reference database ([NCBI's nt database](ftp://ftp.ncbi.nlm.nih.gov/blast/db/)) for BLASTN and INFERNAL. The following command can used for NCBI's nt database. Make sure there is enough space on the system as NCBI's nt database is of size around 270 GB after extraction and it can take couple of hours to download depending on the internet speed. In case of any issue, please rerfer to [NCBI's database website](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download).
 
 11. `wget -c "ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nt.gz" -O ./nt_database && gunzip ./nt_database/nt.gz`
 
