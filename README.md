@@ -57,7 +57,7 @@ If NCBI's nt database already available in your system, please add path to datab
 
 This NCBI's database need to formated to use with BLASTN tool. To format the NCBI's database, the following command can be used. Please make sure system have enough space as formated database is of size around 120 GB in addition to appox. 270 GB from previous step and it can few hours for it.
 
-12. `./ncbi-blast-2.10.0+/bin/makeblastdb -in ./nt_database -dbtype nucl`
+12. `./ncbi-blast-2.10.0+/bin/makeblastdb -in ./nt_database/nt -dbtype nucl`
 
 To install the DCA predictor, please run the following command:<br />
 
