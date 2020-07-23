@@ -44,8 +44,8 @@ If Infernal tool is alread installed in the system, please add path to binary fi
 
 If BLASTN tool is alread installed in the system, please add path to binary files in line no. 7 of 'run_rnacmap.sh' file. In case, BLASTN tool is not installed in the system, please use follwing 2 command to download and extract it. In case of any problem and issue regarding BLASTN download, please refer to [BLASTN webpage](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download) as following commands only tested on Ubuntu 18.04, 64 bit system.
 
-8. `wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.10.0+-x64-linux.tar.gz'`
-9. `tar -xvzf ncbi-blast-2.10.0+-x64-linux.tar.gz && rm ncbi-blast-2.10.0+-x64-linux.tar.gz`
+8. `wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-*+-x64-linux.tar.gz'`
+9. `tar -xvzf ncbi-blast-*+-x64-linux.tar.gz && rm ncbi-blast-*+-x64-linux.tar.gz`
 
 Either install **RNAfold** or **SPOT-RNA** predictor depending upon which Secondary Structure predictor you want to use. Installation of RNAfold will take 15-20 mins and 2-3 mins for SPOT-RNA. Both the secondary structure can be installed as well if you want to predict for both predictors. In case of issue regarding installation of these predictors, please refer to more specific and detailed guide for [ViennaRNA](https://www.tbi.univie.ac.at/RNA/#download) and [SPOT-RNA](https://github.com/jaswindersingh2/SPOT-RNA).<br />
 
