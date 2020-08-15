@@ -72,7 +72,7 @@ dca = np.flipud(dca[dca[:,2].argsort()])
 dca = dca[0:int(len(seq)/4)]
 
 #### get base-pair index values starting from 0 ########
-pred_pairs = [[int(i[0]-1), int(i[1]-1)] for i in dca]
+pred_pairs = [[int(i[0]), int(i[1])] for i in dca]
 #print(pred_pairs)
 
 #### write base-pairs in standard RNA secondary structure format ########
