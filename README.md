@@ -75,7 +75,7 @@ References
 ====
 If you use RNAcmap for your research please cite the following papers:
 ----
-Zhang, T., Singh, J., Litfin, T., Zhan, J., Paliwal, K., Zhou, Y., 2020. RNAcmap: A Fully Automatic Method for Predicting Contact Maps of RNAs by Evolutionary Coupling Analysis. (Under Review)
+Zhang, T., Singh, J., Litfin, T., Zhan, J., Paliwal, K. and Zhou, Y., 2021. RNAcmap: a fully automatic pipeline for predicting contact maps of RNAs by evolutionary coupling analysis. Bioinformatics, 37(20), pp.3494-3500.
 
 Other references:
 ----
